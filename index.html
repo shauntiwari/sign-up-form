@@ -12,10 +12,12 @@
     <div id="container">
         <div id="left-side">Logo and Graphic Here</div>
         <div id="right-side">
-            <div id="right-top">This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up now to get started.</div>
+            <div id="right-top">This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up now to get started.
+                <p>You know you want to!</p>
+            </div>
             <div id="right-middle">
                 <div>Let's do this!</div>
-                <form action="">
+                <form action="" id="my_form">
                     <fieldset>
                         <label for="first_name">FIRST NAME</label>
                         <input type="text" id="first_name">
@@ -32,7 +34,10 @@
                     </fieldset>
                 </form>
             </div>
-            <div id="right-bottom">Button and text here</div>
+            <div id="right-bottom">
+                <button type="submit" form="my_form">Create Account</button>
+                <div>Already have an account? Log in</div>
+            </div>
         </div>
     </div>
 </body>

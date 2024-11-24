@@ -50,7 +50,7 @@ body {
     flex-direction: row;
     align-items: center;
     background-color: white;
-    width: 1200px;
+    width: 1250px;
     height: 850px;
     border: 1px solid;
     margin: 80px;
@@ -63,27 +63,39 @@ body {
     flex-direction: column;
     align-items: center;
     width: 450px;
+    height: 850px;
+    background-image: url(./halie-west-25xggax4bSA-unsplash.jpg)
  }
 
  #right-side {
     font-weight: bold;
     display: flex;
     flex-direction: column;
-    width: 750px;
-    padding: 0px 50px;
+    font-size: 1.25rem;
+    width: 800px;
+    padding-left: 50px;
+    padding-right: 125px;
+ }
+
+ #right-middle, #right-bottom {
+    padding-top: 20px;
+ }
+ 
+ #right-top, #right-bottom {
+    background-color: lightgray;
  }
 
  #right-top {
     height: 300px;
-
  }
-
+ 
  #right-middle {
     height: 250px;
  }
 
  #right-bottom {
     height: 300px;
+    font-size: 1rem;
  }
 
  div {
@@ -92,4 +104,19 @@ body {
 
  input {
     width: 200px;
+    margin-top: 10px;
+ }
+
+ label {
+    font-size: 0.7rem;
+ }
+
+ button {
+    margin-bottom: 20px;
+    background-color: #596D48;
+    color: white;
+    width: 200px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
  }
