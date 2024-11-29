@@ -49,6 +49,18 @@ h1, h2, h3, h4, h5, h6 {
 
 body {
     background-color: black;
+    --button-color: #596D48;
+    --input-default-color: #e5e7eb;
+    --input-invalid-color: red;
+    --input-selected-color: rgb(84, 134, 226);
+}
+
+a {
+    color: inherit;
+}
+
+a:hover {
+    cursor: pointer;
 }
 
 #container {
@@ -61,7 +73,6 @@ body {
 }
 
 #left-side {
-    font-weight: bold;
     color: white;
     display: flex;
     flex-direction: column;
@@ -69,6 +80,8 @@ body {
     justify-content: space-between;
     width: 450px;
     background-image: url(./images/halie-west-25xggax4bSA-unsplash.jpg);
+    font-size: 0.75rem;
+    padding-bottom: 10px;
 }
 
 img {
@@ -118,20 +131,40 @@ img {
     flex: 1;
     font-size: 1rem;
     padding-top: 30px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+}
+
+#right-bottom a {
+    text-decoration: none;
+    color: var(--button-color);
 }
 
 input {
-    height: 25px;
-    width: 200px;
+    height: 30px;
+    width: 220px;
+    border-color: var(--input-default-color);
+    border-style: solid;
+    border-radius: 3px;
+    outline: none;
+}
+
+input:focus {
+    border: 2px solid var(--input-selected-color);
+    box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+input:invalid {
+    border-color: red;
 }
 
 label {
     font-size: 0.7rem;
+    color: #0b1a2ec9;
 }
 
 button {
     margin-bottom: 20px;
-    background-color: #596D48;
+    background-color: var(--button-color);
     color: white;
     width: 200px;
     height: 40px;
@@ -139,12 +172,17 @@ button {
     border-radius: 5px;
 }
 
+button:hover {
+    cursor: pointer;
+}
+
 fieldset {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
-    padding: 10px 0px;
+    padding: 15px 0px;
     border: none;
+    font-weight: bold
 }
 
 .inputs {
