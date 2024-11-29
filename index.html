@@ -29,27 +29,33 @@
                         <fieldset>
                             <div class="inputs">
                                 <label for="first_name">FIRST NAME</label>
-                                <input type="text" id="first_name">
+                                <input type="text" id="first_name" name="first_name">
                             </div>
                             <div class="inputs">
                                 <label for="last_name">LAST NAME</label>
-                                <input type="text" id="last_name">
+                                <input type="text" id="last_name" name="last_name">
                             </div>
                             <div class="inputs">
                                 <label for="email_address">EMAIL</label>
-                                <input type="email" id="email_address">
+                                <input type="email" id="email_address" name="email_address">
                             </div>
                             <div class="inputs">
                                 <label for="phone_number">PHONE NUMBER</label>
-                                <input type="number" id="phone_number">
+                                <input type="number" id="phone_number" name="phone_number">
                             </div>
                             <div class="inputs">
                                 <label for="pwd">PASSWORD</label>
-                                <input type="password" id="pwd">
+                                <input type="password"
+                                pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$"
+                                id="pwd" name="pwd">
+                                <span></span>
                             </div>
                             <div class="inputs">
                                 <label for="confirm_pwd">CONFIRM PASSWORD</label>
-                                <input type="password" id="confirm_pwd">
+                                <input type="password"
+                                pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$"
+                                id="confirm_pwd" name="confirm_pwd">
+                                <span></span>
                             </div>
                         </fieldset>
                     </form>

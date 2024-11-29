@@ -146,6 +146,8 @@ input {
     border-style: solid;
     border-radius: 3px;
     outline: none;
+    font-size: 0.9rem;
+    font-weight: normal;
 }
 
 input:focus {
@@ -154,7 +156,14 @@ input:focus {
 }
 
 input:invalid {
-    border-color: red;
+    border-color: var(--input-invalid-color);
+}
+
+input:invalid + span::after {
+    content: "*Invalid Password";
+    color: var(--input-invalid-color);
+    font-size: 0.8rem;
+    position: absolute;
 }
 
 label {
@@ -191,5 +200,3 @@ fieldset {
     width: 200px;
     margin-right: 80px;
 }
-
- /* Need to add css variables to make code more efficient */
